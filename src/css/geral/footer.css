@@ -1,0 +1,341 @@
+.fcontainer{
+    padding-top: 20px;
+}
+
+.footer{
+    color: aliceblue;
+}
+
+.h2-footer{
+    text-align: center;
+    
+}
+
+.footer h2{
+    padding-top: 20px;
+    margin-bottom: 40px;
+}
+
+.footer-bg{
+    background-color: #2d2d2e;
+}
+
+.footer-logo{
+    width: 200px;
+    height: 200px;
+}
+.footer-redes{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.redes{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.redes img{
+    width: 60px;
+    height: 60px;
+}
+.footer-informacoes{
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+.mapa{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+.sp{
+    position: absolute;
+    top: 59%;
+    left:59%;
+}
+
+.gu{
+    position: absolute;
+    top: 64.8%;
+    left:60.6%;
+}
+
+.ju{
+    position: absolute;
+    top: 61%;
+    left:63.5%;
+}
+
+.itu{
+    position: absolute;
+    top: 62.5%;
+    left:56.2%;
+}
+
+.lime{
+    position: absolute;
+    top: 68.5%;
+    left:63.5%;
+}
+
+.ca{
+    position: absolute;
+    top: 66%;
+    left:66.4%;
+}
+
+.rj{
+    position: absolute;
+    top: 63%;
+    left:76.6%;
+}
+
+.co{
+    position: absolute;
+    top: 55%;
+    left:71.1%;
+}
+
+
+.df{
+    position: absolute;
+    top: 49.6%;
+    left:60%;
+}
+
+.pe{
+    position: absolute;
+    top: 29.6%;
+    left:82.2%;
+}
+
+.bh{
+    position: absolute;
+    top: 51%;
+    left:76.6%;
+}
+
+.vi{
+    position: absolute;
+    top: 56%;
+    left:81.4%;
+}
+
+.rs{
+    position: absolute;
+    top: 83.5%;
+    left:50.8%;
+}
+
+.pr{
+    position: absolute;
+    top: 70.2%;
+    left:56.3%;
+}
+
+.mapa-img{
+    position: relative;
+}
+
+.ponto-f{
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    z-index: 1000px;
+    border-radius: 50%;
+}
+
+.locais{
+    margin-top: 80px;
+    width: 600px;
+}
+
+.locais2{
+    display: none;
+}
+
+.locais-lista-m{
+    display: none;
+}
+
+
+
+
+@media (max-width:1150px){
+    .footer-logo{
+        width: 100px;
+        height: 100px;
+        display: none;
+    }
+
+    .footer-info{
+        text-align: none;
+        font-size: .8rem;
+    }
+
+    .footer-redes h4{
+        font-size: .8rem;
+    }
+
+    .footer-informacoes{
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: 2fr  1fr;
+    }
+    .ponto-f{
+        display: none;
+    }
+    .locais{
+        margin-top: 40px;
+    }
+    
+    .locais p{
+        font-size: 3rem;
+    }
+
+
+    .redes{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+    
+    .redes img{
+        width: 50px;
+        height: 50px;
+    }
+
+    .whats{
+        width: 50px;
+    }
+   
+  }
+  @media (max-width:1000px){
+
+    .mapa{
+        grid-template-columns: 1fr;
+    }
+
+    .mapa-img{
+        display: none;
+    }
+    
+    .footer-info{
+        text-align: none;
+        font-size: .6rem;
+    }
+
+    .footer-redes h3{
+        font-size: .6rem;
+    }
+
+    .locais{
+        margin-top: 20px;
+    }
+
+    .locais p{
+        font-size: 2rem;
+    }
+
+
+  }
+
+  @media (max-width:650px){
+
+    .redes{
+        display: flex;
+        flex-direction: row;
+        gap: 4px;
+    }
+    
+    .redes img{
+        width: 40px;
+        height: 40px;
+    }
+    .locais{
+        margin-top: 40px;
+    }
+    
+    .locais p{
+        font-size: 1rem;
+    }
+
+    .footer-informacoes{
+        margin-top: 0px;
+    }
+
+  }
+
+
+  @media (max-width:450px){
+
+    .footer-informacoes{
+        display: grid;
+        grid-template-columns: 1fr
+    }
+    .locais{
+        margin-top: 20px;
+        width: auto;
+        margin-bottom: 20px;
+        text-align: center;
+        display: none;
+    }
+
+    .locais2{
+        margin-top: 20px;
+        width: auto;
+        margin-bottom: 20px;
+        text-align: center;
+        display: block;
+    }
+
+    .locais2 p{
+        font-size: 1rem;
+    }
+
+    .locais2{
+        font-size: .5rem;
+    }
+
+    .locais-lista-m{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .estado{
+        margin-bottom: 20px;
+    }
+
+    .estado h3{
+      position: relative;
+    }
+    .estado h3::before{
+        content: "";
+        display: block;
+        height: 5px;
+        width: 5px;
+        background-color: #DF8215;
+        position: absolute;
+        left: -10px;
+        top: 8px;
+        border-radius: 10px;
+    }
+    .footer-informacoes{
+        text-align: center;
+    }
+
+    .footer-redes{
+        justify-content: center;
+        margin: 0 auto;
+        padding-bottom: 20px;
+    }
+
+  }
+
+

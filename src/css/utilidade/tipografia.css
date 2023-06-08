@@ -1,0 +1,50 @@
+.titulo1{
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-family: 'Arial Nova', sans-serif;
+    letter-spacing: .1rem;
+}
+
+
+.titulo2{
+    background: linear-gradient(270deg, #ED7A08 0%, #F19300 100%);
+    padding: 0px 10px;
+    border-radius: 5px;
+}
+
+.titulo3{
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    font-family: 'Arial Nova', sans-serif;
+}
+.titulo4{
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-family: 'Arial Nova', sans-serif;
+}
+
+
+.texto{
+    font-size: 1.5rem;
+    font-family: 'Arial Nova', sans-serif;
+    line-height: 1.5;
+}
+
+.texto2{
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-family: 'Arial Nova', sans-serif;
+}
+
+.texto3{
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+.texto4{
+    margin-top: 10px;
+    font-size: 1.2rem;
+    
+}
+
+

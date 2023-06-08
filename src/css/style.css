@@ -1,0 +1,30 @@
+
+/*Empresa*/
+
+/*utilidade*/
+@import './reset.css';
+@import './utilidade/componentes.css';
+@import './utilidade/tipografia.css';
+@import './utilidade/formulario.css';
+@import './utilidade/cor.css';
+@import './utilidade/simple-anime.css';
+@import './utilidade/slider.css';
+@import './utilidade/modal.css';
+
+/*Pagina Inicial*/
+@import './geral/header.css';
+@import './geral/introducao.css';
+@import './geral/sobre.css';
+@import './geral/servico.css';
+@import './geral/portfolio.css';
+@import './geral/footer.css';
+
+
+@import './paginas/empresa.css';
+
+
+/*Porfolio*/
+@import './paginas/portfolio.css';
+
+/*Contato*/
+@import './paginas/contato.css';

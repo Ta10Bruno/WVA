@@ -1,0 +1,36 @@
+:root {
+    --cor-0: #ffffff;
+    --cor-1: #F19300;
+    --cor-2: #ED7A08;
+    --cor-3: #E96117;
+    --cor-4: #2D2D2E;
+    --cor-5: #000;
+    --cor-6: linear-gradient(243.96deg, #F19300 43.07%, #ED7A08 57.91%, #E96117 80.24%);
+    --swiper-navigation-color: var(--cor-1);
+    --swiper-pagination-color: var(--cor-1);
+    --swiper-navigation-size: 80px;
+    --swiper-navigation-sides-offset: 0px;
+  }
+  
+  .cor-0 {
+    color: var(--cor-0);
+  }
+  .cor-1 {
+    color: var(--cor-1);
+  }
+  .cor-2 {
+    color: var(--cor-2);
+  }
+  .cor-3 {
+    color: var(--cor-3);
+  }
+  .cor-4 {
+    color: var(--cor-4);
+  }
+  .cor-5 {
+    color: var(--cor-5);
+  }
+  .cor-6 {
+    color: var(--cor-6);
+  }
+

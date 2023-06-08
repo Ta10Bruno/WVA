@@ -1,0 +1,145 @@
+.cliente{
+    background-image: url(../../img/bg2.svg);
+}
+
+.portfolio-p{
+    margin-top: 80px;
+    margin-bottom: 80px;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+}
+
+
+
+.caixa{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 80px;
+    gap: 80px;
+    justify-content: space-between;
+}
+
+.port-detalhe{
+    position: relative;
+}
+.port-detalhe::before{
+    content: "";
+    display: block;
+    height: 300px;
+    width: 300px;
+    background-color: #DF8215;
+    position: absolute;
+    left: -40px;
+    top: -40px;
+}
+
+.right-port-detalhe{
+    position: relative;
+}
+.right-port-detalhe::before{
+    content: "";
+    display: block;
+    height: 300px;
+    width: 300px;
+    background-color: #DF8215;
+    position: absolute;
+    right: -40px;
+    top: -40px;
+}
+
+.portfolio-p-conteudo p{
+    margin-bottom: 20px;
+
+}
+
+.portfolio h2{
+    margin-top: 40px;
+}
+
+.lista-port-p{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+}
+
+.lista-port-p li{
+    position: relative;
+
+}
+
+.lista-port-p li::before{
+    content: "";
+    display: block;
+    height: 4px;
+    width: 4px;
+    background-color: #DF8215;
+    position: absolute;
+    left: -15px;
+    top: 6px;
+}
+
+
+
+
+
+
+.visita{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.footer-texto{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 300px;
+}
+hr{
+    margin-bottom: 80px;
+    border: .5px solid rgba(1, 1, 1, 0.1);;
+}
+
+.footer-p .footer-bg{
+    padding-top: 0px;
+}
+
+@media (max-width: 1000px){
+
+    .caixa{
+       grid-template-columns: 1fr;
+       margin: 0 auto;
+    }
+
+    .port-detalhe::before{
+        display: none;
+    }
+    
+    .right-port-detalhe::before{
+        display: none;
+    }
+    
+    .servico-img-e{
+        display: none;
+    }
+
+    .item-1{
+        grid-row: 2;
+    }
+
+    .item-2{
+        grid-row: 1;
+    }
+}
+
+@media (max-width:450px){
+    .caixa{
+        justify-content: center;
+    }
+    .introducao-texto h1{
+        font-size: 1.5rem;
+    }
+}

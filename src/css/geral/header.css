@@ -1,0 +1,125 @@
+.header-bg{
+    background-color: #2d2d2e;
+}
+
+.header{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.header-menu{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.logo{
+    width: 200px;
+    height: 100px;
+}
+
+#btn-mobile{
+    display: none;
+}
+
+
+
+.header-menu a{
+    display: inline-block;
+    color: #fff;
+    padding: 20px;
+    font-size: 1.125rem;
+    position: relative;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.header-menu a:hover{
+    color: #E96117;
+   
+}
+
+@media (max-width: 800px){
+
+    .header-menu{
+        gap: 20px;
+    }
+    .header-menu a {
+        background-color: #E96117;
+        padding: 16px 12px;
+        border-radius: 5px;
+    }
+
+    .header-menu a:hover{
+        background-color: #111;
+        
+    }
+    .header a::after{
+        display: none;
+    }
+}
+
+@media (max-width:650px){
+
+    .header{
+        justify-content: center;
+    }
+    .header-menu{
+        gap:4px
+    }
+
+    .header-menu a{
+        padding: 8px 12px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width:450px){
+    .header-menu a{
+        width: 100%;
+        font-size: .9rem;
+        border-radius: 0px;
+        background-color: none;
+        padding: 1rem 1rem;
+        border-bottom: 2px solid rgba(0,0,0 ,.07);
+        background-color: #2d2d2e;
+    }
+    #btn-mobile{
+        display: block;
+        display: flex;
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+    }
+
+    .header-menu{
+        gap: 0px;
+        position: absolute;
+        width: 100%;
+        top: 120px;
+        right: 0;
+        background-color: #2d2d2e;
+        display: block;
+        height: 0px;
+        transition: .6s;
+        z-index: 1000;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+    .header{
+        justify-content: space-between;
+    }
+
+    #nav.active .header-menu{
+        display: block;
+        height: calc(100vh - 120px);
+        visibility: visible;
+        overflow: auto;
+    }
+}

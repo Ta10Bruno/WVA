@@ -1,0 +1,153 @@
+.servico-pag{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+}
+.qualidades{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.qualidades img{
+    width: 500px;
+}
+.divisao{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.servico-img-e{
+    width: 600px;
+    height: 600px;
+}
+
+.servico-conteudo-e{
+    margin-top: 80px;
+    display:  flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.servico-conteudo-e h2{
+    position: relative;
+    z-index: 1;
+}
+
+.servico-conteudo-e h2::before{
+    content: "";
+    background: linear-gradient(270deg, #E96117 14.57%, #ED7A08 40.35%, #F19300 70.59%);
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    position: absolute;
+    width: 420px;
+    height: 60px;
+    z-index: -1;
+    left: -130px;
+    top: -15px;
+}
+
+.lista-servico{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 80px;
+    margin-top: 40px;
+}
+
+.lista-servico li{
+    position: relative;
+
+}
+
+.lista-servico li::before{
+    content: "";
+    display: block;
+    height: 4px;
+    width: 4px;
+    background-color: #DF8215;
+    position: absolute;
+    left: -15px;
+    top: 6px;
+}
+
+.wrapper{
+    width: 100%;
+    margin: 0 auto;
+}
+div.servico-bg{
+  margin-top: 0px;
+}
+  section.module.parallax{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh !important;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+  }
+  
+  section.module.parallax:after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 8;
+    background: -moz-linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 40%, #000 100% );
+    background: -webkit-linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 40%, #000 100% );
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 40%, #000 100% );
+  }
+  
+  
+  section.module.parallax-1{
+    background-image: url("../../img/paralax-1.jpg");
+  }
+  
+  section.module.parallax-2{
+    background-image: url("../../img/paralax-2.jpg");
+  }
+  
+  section.module.parallax h1{
+    color: #FFF;
+    text-align: center;
+    font-size: 78px;
+    z-index: 50;
+    text-transform: uppercase;
+  }
+
+@media (max-width: 800px){
+
+    .sobre-img::after{
+       display: none;
+
+    }
+    .sobre-img{
+        width: 300px;
+    }
+    
+}
+@media (max-width: 550px){
+
+  .sobre-img::after{
+     display: none;
+
+  }
+  .sobre-img{
+      width: 300px;
+  }
+  .servico-conteudo-e h2{
+    font-size: 1.2rem;
+}
+  .servico-pag{
+    margin: 0 auto;
+  }
+
+  .botao-servico-e{
+  }
+}
